@@ -1,5 +1,5 @@
-<h2>Understanding Big-O Notations:</h2>
-<p>Understanding Big-O Notation is crucial for developers because it helps them write efficient code, optimize algorithms, and understand the potential bottlenecks in their applications as data grows. In this post, we'll break down different Big-O complexities with easy-to-understand examples.</p>
+## Understanding Big-O Notations:</h2>
+Understanding Big-O Notation is crucial for developers because it helps them write efficient code, optimize algorithms, and understand the potential bottlenecks in their applications as data grows. In this post, we'll break down different Big-O complexities with easy-to-understand examples.
 
 <div class="separator" style="clear: both; text-align: center; padding: 1em 0;">
     <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ90cIKfVcywRb5Wg4R4XHdWwAdC4w0ZtPLLPbEDvMQ0KrKkZC4UH1MMinTupz44gXpIQdEWXk5kBE1Jz8Z0p4enNhSrrCbkgyjx0OVplLvQSqURYgCKhDD21tJRMi8TPiHoGnpXhQeiwxSuQUbO-A13-itOfhfek_AdeGlclXpUGB1386gl49IVBhtlw/s1400/Bigonotation1.png" style="display: block;">
@@ -7,111 +7,29 @@
     </a>
 </div>
 
-
-<h2>Why is Big-O Important?</h2>
+## Why is Big-O Important?</h2>
 
 - Predict Performance: It shows how an algorithm will perform as the input size grows.
 - Optimize Code: Identifies areas where you can make algorithms more efficient.
 - Compare Algorithms: Helps in choosing the best approach for a problem.           
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+## Different Big-O Notations
+Here are the types of Big-O notations:</p>
+* O(1) - Constant Time</li>
+* O(log n) - Logarithmic Time</li>
+* O(n) - Linear Time</li>
+* O(n log n) - Linearithmic Time</li>
+* O(n²) - Quadratic Time</li>
+* O(n³) - Cubic Time</li>
+* O(2ⁿ) - Exponential Time</li>
+* O(n!) - Factorial Time</li>
 
 
-<style>
-/* General styling for the code block container */
-pre, code {
-    font-family: 'Courier New', monospace;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    overflow: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-/* Styling for code inside code blocks */
-code {
-    font-size: 14px;
-    line-height: 1.5;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    display: block;
-}
-
-/* Button styling for the Copy button */
-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 12px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Add some padding to the blog container */
-.container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-}
-
-/* Blog title styling */
-h2 {
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-/* Blog content styling */
-p, ul {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #444;
-    margin-bottom: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-</style>
-<h2>Different Big-O Notations</h2>
-<p>Here are the types of Big-O notations:</p>
-<ul>
-    <li>O(1) - Constant Time</li>
-    <li>O(log n) - Logarithmic Time</li>
-    <li>O(n) - Linear Time</li>
-    <li>O(n log n) - Linearithmic Time</li>
-    <li>O(n²) - Quadratic Time</li>
-    <li>O(n³) - Cubic Time</li>
-    <li>O(2ⁿ) - Exponential Time</li>
-    <li>O(n!) - Factorial Time</li>
-</ul>
-
-
-<h3>1. O(1) - Constant Time</h3>
+### 1. O(1) - Constant Time
 
 - An algorithm runs in constant time if it takes the same amount of time to execute regardless of the input size.
-<div style="background-color: #f5f5f5; border-radius: 5px; padding: 15px; font-family: 'Courier New', monospace; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); position: relative; margin-bottom: 20px;">
-    <button style="position: absolute; top: 10px; right: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 12px;" onclick="copyCode(this)">Copy</button>
-    <div style="font-weight: bold; margin-bottom: 10px; color: #333;">Python Example:</div>
-    <pre style="margin: 0; padding: 10px; background-color: #ffffff; border-radius: 4px; overflow: auto;">
-<code style="display: block; white-space: pre; color: #333;">
+```python
 import time
 import sys
 # Example: Function to get the first element of a list
@@ -135,20 +53,15 @@ analyze_performance()
 # Space Complexity: O(1)
 # Time taken: 0.000000 seconds (varies depending on system and input size)
 # Approximate space taken: 148 bytes (varies depending on system and input size)
-</code>
-    </pre>
-</div>
-
+```
 - Accessing the first element of a list takes the same amount of time, no matter the size of the list.
+- Time Taken: Instant (~0 seconds) | Space Taken: 148 bytes.
 
-<h3>2. O(log n) - Logarithmic Time</h3>
+
+### 2. O(log n) - Logarithmic Time
 
 - An algorithm runs in logarithmic time if it reduces the problem size by half with each step. This is common in divide-and-conquer algorithms like binary search.
-<div style="background-color: #f5f5f5; border-radius: 5px; padding: 15px; font-family: 'Courier New', monospace; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); position: relative; margin-bottom: 20px;">
-    <button style="position: absolute; top: 10px; right: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 12px;" onclick="copyCode(this)">Copy</button>
-    <div style="font-weight: bold; margin-bottom: 10px; color: #333;">Python Example:</div>
-    <pre style="margin: 0; padding: 10px; background-color: #ffffff; border-radius: 4px; overflow: auto;">
-<code style="display: block; white-space: pre; color: #333;">
+```python
 import time
 import sys
 # Example: Binary search on a sorted list
@@ -186,21 +99,15 @@ analyze_binary_search_performance()
 # Space Complexity: O(1)
 # Time taken: 0.000001 seconds
 # Approximate space taken: 180 bytes
+```
 
-</code>
-    </pre>
-</div>
+- Efficiently halves the problem size at each step.
+- Time Taken: Very fast (~0.000001 seconds) | Space Taken: 180 bytes.
 
-- The search space is halved at each step, leading to O(log n) complexity.
-
-<h3>3. O(n) - Linear Time</h3>
+### 3. O(n) - Linear Time
 -  An algorithm runs in linear time if its runtime increases linearly with the size of the input. 
 
-<div style="background-color: #f5f5f5; border-radius: 5px; padding: 15px; font-family: 'Courier New', monospace; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); position: relative; margin-bottom: 20px;">
-    <button style="position: absolute; top: 10px; right: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 12px;" onclick="copyCode(this)">Copy</button>
-    <div style="font-weight: bold; margin-bottom: 10px; color: #333;">Python Example:</div>
-    <pre style="margin: 0; padding: 10px; background-color: #ffffff; border-radius: 4px; overflow: auto;">
-<code style="display: block; white-space: pre; color: #333;">
+```python
 import time
 import sys
 # Example: Finding the maximum element in a list
@@ -228,21 +135,18 @@ analyze_performance()
 # Space Complexity: O(1)
 # Time taken: 0.000001 seconds (varies depending on system and input size)
 # Approximate space taken: 180 bytes (varies depending on system and input size)
-</code>
-    </pre>
-</div>
+```
 
 - The function iterates through the entire list once, resulting in a linear time complexity of O(n).
+- Scales proportionally with input size.
+- Time Taken: Quick (~0.000001 seconds) | Space Taken: 180 bytes.
 
-<h3>4. O(n log n) - Linearithmic Time</h3>
+
+### 4. O(n log n) - Linearithmic Time
 
 - This time complexity is typical for efficient sorting algorithms like mergesort and quicksort, which divide the problem and solve each part.
 
-<div style="background-color: #f5f5f5; border-radius: 5px; padding: 15px; font-family: 'Courier New', monospace; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); position: relative; margin-bottom: 20px;">
-    <button style="position: absolute; top: 10px; right: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 12px;" onclick="copyCode(this)">Copy</button>
-    <div style="font-weight: bold; margin-bottom: 10px; color: #333;">Python Example:</div>
-    <pre style="margin: 0; padding: 10px; background-color: #ffffff; border-radius: 4px; overflow: auto;">
-<code style="display: block; white-space: pre; color: #333;">
+```python
 import time
 import sys
 # Example: Merge sort algorithm
@@ -284,21 +188,16 @@ analyze_performance()
 # Space Complexity: O(n)
 # Time taken: 0.000010 seconds (varies depending on system and input size)
 # Approximate space taken: 240 bytes (varies depending on system and input size)
-</code>
-    </pre>
-</div>
-
+```
 
 - The array is repeatedly divided in half (log n), and each half is merged in linear time (n), resulting in O(n log n).
+- Common in sorting algorithms; more complex than linear.
+- Time Taken: Moderate (~0.000010 seconds) | Space Taken: 240 bytes.
 
-<h3>5. O(n²) - Quadratic Time</h3>
+### 5. O(n²) - Quadratic Time
 
 - An algorithm runs in quadratic time if it uses nested loops over the input data. This is common in basic sorting algorithms like bubble sort.
-<div style="background-color: #f5f5f5; border-radius: 5px; padding: 15px; font-family: 'Courier New', monospace; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); position: relative; margin-bottom: 20px;">
-    <button style="position: absolute; top: 10px; right: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 12px;" onclick="copyCode(this)">Copy</button>
-    <div style="font-weight: bold; margin-bottom: 10px; color: #333;">Python Example:</div>
-    <pre style="margin: 0; padding: 10px; background-color: #ffffff; border-radius: 4px; overflow: auto;">
-<code style="display: block; white-space: pre; color: #333;">
+```python
 import time
 import sys
 # Example: Bubble sort
@@ -326,20 +225,17 @@ analyze_performance()
 # Space Complexity: O(1)
 # Time taken: 0.000010 seconds (varies depending on system and input size)
 # Approximate space taken: 120 bytes (varies depending on system and input size)
-</code>
-    </pre>
-</div>
+```
 
 - The function compares each pair of elements in the array, leading to O(n²) complexity due to the nested loops.
+- Increases rapidly with nested loops.
+- Time Taken: Slower (~0.00010 seconds) | Space Taken: 120 bytes.
 
-<h3>6. O(n³) - Cubic Time</h3>
+
+### 6. O(n³) - Cubic Time
 
 - Algorithms with three nested loops run in cubic time. This is rare but can occur in some brute-force algorithms, such as matrix multiplication.
-<div style="background-color: #f5f5f5; border-radius: 5px; padding: 15px; font-family: 'Courier New', monospace; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); position: relative; margin-bottom: 20px;">
-    <button style="position: absolute; top: 10px; right: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 12px;" onclick="copyCode(this)">Copy</button>
-    <div style="font-weight: bold; margin-bottom: 10px; color: #333;">Python Example:</div>
-    <pre style="margin: 0; padding: 10px; background-color: #ffffff; border-radius: 4px; overflow: auto;">
-<code style="display: block; white-space: pre; color: #333;">
+```python
 import time
 import sys
 # Example: Matrix multiplication
@@ -370,20 +266,15 @@ analyze_performance()
 # Space Complexity: O(n²)
 # Time taken: 0.000007 seconds (varies depending on system and input size)
 # Approximate space taken: 232 bytes (varies depending on system and input size)
-</code>
-    </pre>
-</div>
+```
 
 - The algorithm has three nested loops for matrix multiplication, leading to O(n³) time complexity.
+- Slower than quadratic; typical in triple nested loops.
+- Time Taken: Noticeably slower (~0.000007 seconds) | Space Taken: 232 bytes.
  
-<h3>7. O(2ⁿ) - Exponential Time</h3>
-
+### 7. O(2ⁿ) - Exponential Time
 - An algorithm runs in exponential time if it doubles in runtime with each additional element in the input. This is common in recursive algorithms that solve subproblems repeatedly, like the naive recursive Fibonacci sequence.
-<div style="background-color: #f5f5f5; border-radius: 5px; padding: 15px; font-family: 'Courier New', monospace; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); position: relative; margin-bottom: 20px;">
-    <button style="position: absolute; top: 10px; right: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 12px;" onclick="copyCode(this)">Copy</button>
-    <div style="font-weight: bold; margin-bottom: 10px; color: #333;">Python Example:</div>
-    <pre style="margin: 0; padding: 10px; background-color: #ffffff; border-radius: 4px; overflow: auto;">
-<code style="display: block; white-space: pre; color: #333;">
+```python
 import time
 import sys
 # Example: Recursive Fibonacci sequence
@@ -409,21 +300,16 @@ analyze_performance()
 # Space Complexity: O(n)
 # Time taken: 0.000017 seconds (varies depending on system and n)
 # Approximate space taken: 56 bytes (varies depending on system and n)
-</code>
-    </pre>
-</div>
+```
 
 - Each call to fibonacci makes two additional recursive calls, leading to an exponential growth of 2ⁿ.
+- Doubles time with each input, impractical for large sizes.
+- Time Taken: Slow (~0.000017 seconds) | Space Taken: 56 bytes.
 
-<h3>8. O(n!) - Factorial Time</h3>
+### 8. O(n!) - Factorial Time
 
 - An algorithm with factorial time complexity tries all possible ways to solve a problem. This is typical for algorithms that generate permutations or combinations.
-
-<div style="background-color: #f5f5f5; border-radius: 5px; padding: 15px; font-family: 'Courier New', monospace; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); position: relative; margin-bottom: 20px;">
-    <button style="position: absolute; top: 10px; right: 10px; padding: 5px 10px; background-color: #007bff; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 12px;" onclick="copyCode(this)">Copy</button>
-    <div style="font-weight: bold; margin-bottom: 10px; color: #333;">Python Example:</div>
-    <pre style="margin: 0; padding: 10px; background-color: #ffffff; border-radius: 4px; overflow: auto;">
-<code style="display: block; white-space: pre; color: #333;">
+```python
 import time
 import sys
 # Example: Generating all permutations of a list
@@ -455,34 +341,13 @@ analyze_performance()
 # Space Complexity: O(n!)
 # Time taken: 0.000013 seconds (varies based on system and input size)
 # Approximate space taken: 240 bytes (varies based on system and input size)
-</code>
-    </pre>
-</div>
-
-<script>
-function copyCode(button) {
-    const codeElement = button.parentElement.querySelector('code');
-    const tempTextArea = document.createElement('textarea');
-    tempTextArea.value = codeElement.textContent.trim();
-    document.body.appendChild(tempTextArea);
-    tempTextArea.select();
-    try {
-        document.execCommand('copy');
-        button.textContent = 'Copied!';
-        setTimeout(() => {
-            button.textContent = 'Copy';
-        }, 2000);
-    } catch (err) {
-        console.error('Failed to copy text: ', err);
-        alert('Failed to copy the code. Please try again!');
-    }
-    document.body.removeChild(tempTextArea);
-}
-</script>
+```
 
 - The function generates all permutations of the list, leading to O(n!) complexity due to the recursive calls and list construction.
+- Extremely slow, as it explores all possibilities.
+- Time Taken: Very slow (~0.000013 seconds) | Space Taken: 240 bytes.
 
-<h2>Comparision</h2>
+## Comparision
 
 <div class="separator" style="clear: both; text-align: center; padding: 1em 0;">
     <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0lf4B3MqmBlgNdBZlYakuoFTDsrtWeZMbsIvgKv59k9MeJmlZUvM1T2VjNo-VVcdZSE5_krEEDEmUxOvVD_nzHd6wLyn-3veFryKBn57atE4b1fgAo9PAbG2VzWFUuOTLJns0pPQdJCR_pMHfy76bAhNrdA3mhMSipqPCp-ke3dOqkpb7wzn6yrVsSpY/s1568/BigONotation-Comparision.png" style="display: block;">
@@ -573,58 +438,16 @@ function copyCode(button) {
 </br>
 
 
-## Conclusion
+## Summary
 
-Big O Notation helps you understand how efficient your code is as data grows. Aim for efficient algorithms like O(1), O(log n), and O(n). Be cautious with more complex ones like O(n²) and O(2ⁿ).
+#### Efficient Algorithms: 
+- O(1), O(log n), and O(n) are ideal for large datasets, offering quick runtimes and minimal memory usage.
 
-O(1) - Constant Time:
+#### Moderately Efficient: 
+- O(n log n) is efficient for sorting algorithms, striking a balance with moderate time and space requirements.
 
-    Remains constant, regardless of input size.
-    Time Taken: Instant (~0 seconds) | Space Taken: 148 bytes.
-
-O(log n) - Logarithmic Time:
-
-    Efficiently halves the problem size at each step.
-    Time Taken: Very fast (~0.000001 seconds) | Space Taken: 180 bytes.
-
-O(n) - Linear Time:
-
-    Scales proportionally with input size.
-    Time Taken: Quick (~0.000001 seconds) | Space Taken: 180 bytes.
-
-O(n log n) - Linearithmic Time:
-
-    Common in sorting algorithms; more complex than linear.
-    Time Taken: Moderate (~0.000010 seconds) | Space Taken: 240 bytes.
-
-O(n²) - Quadratic Time:
-
-    Increases rapidly with nested loops.
-    Time Taken: Slower (~0.00010 seconds) | Space Taken: 120 bytes.
-
-O(n³) - Cubic Time:
-
-    Slower than quadratic; typical in triple nested loops.
-    Time Taken: Noticeably slower (~0.000007 seconds) | Space Taken: 232 bytes.
-
-O(2ⁿ) - Exponential Time:
-
-    Doubles time with each input, impractical for large sizes.
-    Time Taken: Slow (~0.000017 seconds) | Space Taken: 56 bytes.
-
-O(n!) - Factorial Time:
-
-    Extremely slow, as it explores all possibilities.
-    Time Taken: Very slow (~0.000013 seconds) | Space Taken: 240 bytes.
-
-
-<h2>Summary</h2>
-
-	Efficient Algorithms: O(1), O(log n), and O(n) are ideal for large datasets, offering quick runtimes and minimal memory usage.
-
-    Moderately Efficient: O(n log n) is efficient for sorting algorithms, striking a balance with moderate time and space requirements.
-
-    Inefficient Algorithms: O(n²), O(n³), O(2ⁿ), and O(n!) become impractical as input sizes grow, as they consume significant time and memory, making them suitable only for small datasets.
+#### Inefficient Algorithms: 
+- O(n²), O(n³), O(2ⁿ), and O(n!) become impractical as input sizes grow, as they consume significant time and memory, making them suitable only for small datasets.
 
 By understanding and choosing the right algorithm based on complexity, you can optimize your code for better performance and scalability. Practice analyzing and implementing various algorithms to gain a deeper understanding of how they behave with different input sizes.
 
