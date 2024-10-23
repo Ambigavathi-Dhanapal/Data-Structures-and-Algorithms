@@ -396,12 +396,11 @@ function copyCode(button) {
 
 <h2>Conclusion</h2>
 <p>Big O Notation helps you understand how efficient your code is as data grows. Aim for efficient algorithms like O(1), O(log n), and O(n). Be cautious with more complex ones like O(n²) and O(2ⁿ).</p>
+
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Ambigavathi-Dhanapal/Data-Structures-and-Algorithms) [![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)](https://github.com/Ambigavathi-Dhanapal/Data-Structures-and-Algorithms/blob/main/BigONotation.ipynb) 	 [![Blog](https://img.shields.io/badge/Blog-Visit-brightgreen)](https://learntocodewithambiga.blogspot.com/2024/10/big-o-notation-complete-guide.html)
+
+
 <p>Practice analyzing different algorithms to write better and faster code. If you have any questions or want to share your experiences, feel free to comment below. I’d love to hear your thoughts!</p>
 
-<h2>Further Reading</h2>
-<ul>
-    <li><a href="https://www.geeksforgeeks.org/analysis-of-algorithms-set-3asymptotic-notations/">GeeksforGeeks: Asymptotic Notations</a></li>
-    <li><a href="https://www.bigocheatsheet.com/">Big O Cheat Sheet</a></li>
-    <li><a href="https://www.coursera.org/learn/algorithmic-thinking">Coursera: Algorithmic Thinking Course</a></li>
-</ul>
 
